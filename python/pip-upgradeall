@@ -1,0 +1,6 @@
+!#/bin/bash
+
+for each in `pip list|cut -f1 -d\  `
+    do 
+        pip install -U  $each
+    done
